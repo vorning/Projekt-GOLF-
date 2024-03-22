@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Player Profile</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Linker css fil -->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="home.html">Hjem</a></li>
+                    <li><a href="profil.html">Min Profil</a></li>
+                    <li><a href="spil.html">Find Spil</a></li>
+                    <li><a href="findbruger.html">Find Bruger</a></li>
+                    <li><a href="index.html" class="logout-btn">Log ud</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">GOLF</a>
+                        <div class="dropdown-content">
+                            <a href="regler.html">Regler</a>
+                            <a href="etikette.html">Etikette</a>
+                            <a href="golfen.html">Golfens Oprindelse</a>
+                            <a href="hvader.html">Hvad er Golf Universet</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+    <div class="container">
+        <h1 style="color: rgb(255, 255, 255); margin-top: 30px;">Find spiller profil</h1>
+            <input type="text" id="search-input" oninput="searchProfiles()" placeholder="Indtast fulde navn">
+        </div>
+        <div class="profile-list" id="profile-list">
+            <!-- Spiller profiler bliver manuelt hardcoded igennem js -->
+        </div>
+    </div>
+    <script src="js/profiles.js"></script> <!-- Kører JS så -->
+</body>
+</html>

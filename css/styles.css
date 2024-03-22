@@ -1,0 +1,415 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/img/test2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Baggrunded forbliver fikseret så den ikke zommer og alt muligt andet lort */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Dropdown button */
+  
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+.create-game, .view-games {
+    margin-top: 30px;
+}
+
+.search {
+    margin-top: 30px;
+}
+
+.search {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.game-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-item img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.game-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.game-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.participants {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.participant-name {
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    form, .game-item {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="file"] {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: rgba(60, 77, 60, 0.66);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #ffffffd9;
+}
+
+.main-content {
+    padding: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color:(255, 255, 255, 0.9)
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: rgba(60, 77, 60, 0.66);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('img/test.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+button.join-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.join-btn:hover {
+    background-color: #45a049;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+.welcome-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 25px; 
+    margin-bottom: 20px; 
+}
+
+.profile-box img {
+    max-width: 150px; 
+    border-radius: 50%; 
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.stats-section {
+    margin-top: 30px;
+}
+
+.dropbtn {
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #3e8e41;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4f7350;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 14px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px !important; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #4f7350;
+    
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #4caf50; 
+    margin: 0;
+    padding: 0;
+}
+
+.fact-box {
+    margin-top: 30;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px; 
+}
+p {
+    color: #333;
+    line-height: 1.6;
+}
+ol {
+    list-style-type: decimal;
+    line-height: 2;
+    margin-left: 20px;
+}
+.source {
+    margin-top: 20px;
+    text-align: right;
+}
+.source a {
+    color: #666;
+    text-decoration: none;
+}
+.source a:hover {
+    text-decoration: underline;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+h2 {
+    color: #666;
+}
+p {
+    color: #333;
+    line-height: 1.6;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.source {
+    margin-top: 20px;
+    text-align: right;
+}
+.source a {
+    color: #666;
+    text-decoration: none;
+}
+.source a:hover {
+    text-decoration: underline;
+}

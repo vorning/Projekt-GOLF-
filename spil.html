@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golf Games</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="home.html">Hjem</a></li>
+                    <li><a href="profil.html">Min Profil</a></li>
+                    <li><a href="spil.html">Find Spil</a></li>
+                    <li><a href="findbruger.html">Find Bruger</a></li>
+                    <li><a href="index.html" class="logout-btn">Log ud</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">GOLF</a>
+                        <div class="dropdown-content">
+                            <a href="regler.html">Regler</a>
+                            <a href="etikette.html">Etikette</a>
+                            <a href="golfen.html">Golfens Oprindelse</a>
+                            <a href="hvader.html">Hvad er Golf Universet</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+    <div class="container">
+      <!-- Opret nyt spil-->
+      <div class="create-game">
+        <h1 style="color: rgb(255, 255, 255)">Opret nyt spil</h1>
+        <form id="create-game-form">
+          <label for="game-name">Spil Navn:</label>
+          <input type="text" id="game-name" name="game-name" required /><br />
+
+          <label for="course-name">Golf Bane:</label>
+          <input
+            type="text"
+            id="course-name"
+            name="course-name"
+            required
+          /><br />
+
+          <label for="club-image">Klub Billede:</label>
+          <input
+            type="file"
+            id="club-image"
+            name="club-image"
+            accept="image/*"
+            required
+          /><br />
+
+          <button type="submit">Opret Spil</button>
+        </form>
+      </div>
+
+      <!-- Søg funktion for aktive spil -->
+      <div class="search">
+        <h1 style="color: rgb(255, 255, 255)">Søg efter kampe</h1>
+        <input
+          type="text"
+          id="search-input"
+          oninput="searchGames()"
+          placeholder="Søg efter deltagere eller bane"
+        />
+      </div>
+
+      <!-- Viser spil -->
+      <div class="view-games">
+        <h1 style="color: rgb(255, 255, 255)">Åbne spil</h1>
+        <div class="game-list" id="game-list">
+          <!-- Spillede bliver hardcoded ind manuelt. Ingen backend-->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <!-- linker til js her så det køres -->
+  </body>
+</html>
